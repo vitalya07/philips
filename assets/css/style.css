@@ -689,7 +689,7 @@ input:focus {
 }
 @media (max-width: 380px) {
   .title {
-    font-size: 28px;
+    font-size: 24px;
     height: 20px;
     margin-bottom: 50px;
     line-height: 100%;
