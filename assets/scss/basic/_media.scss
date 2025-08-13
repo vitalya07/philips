@@ -1,0 +1,142 @@
+@media (max-width:1280px) {
+    .products {
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+    }
+}
+@media(max-width:1024px) {
+    .title {
+        font-size: 40px;
+        text-align: center;
+    }
+    .descr {
+        font-size: 14px;
+        text-align: center;
+    }
+    .header {
+        &__nav {
+            &-list {
+                gap: 12px;
+                & > li > a {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__contacts {
+            &-link {
+                font-size: 16px;
+            }
+        }
+    }
+    .street-lights  {       
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    }
+    .products {
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+    }
+    .footer {
+        &__nav {
+            &-list {
+                gap: 12px;
+                & > li > a {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__contacts {
+            &-link {
+                font-size: 16px;
+            }
+        }
+        &__copy {
+            font-size: 12px;
+        }
+    }
+}
+@media(max-width:993px) {
+      .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        &__nav {
+            &-list {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 763px) {
+    .hamburger {
+        display: block;
+    }
+    .title {
+        font-size: 34px;
+        height: 80px;
+    }
+    .header__nav {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: $mainColor2;
+        padding: 60px 20px;
+        transition: all .4s ease;
+        &-list {
+            display: block;
+        }
+    }
+    .street-lights  {        
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+    }
+}
+@media (max-width:556px) {
+    .title {
+        font-size: 28px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .street-lights  {       
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        }
+        &__item {
+            &-title {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width:380px) {
+    .title {
+        font-size: 28px;
+        height: 20px;
+        margin-bottom: 50px;
+        line-height: 100%;
+    }
+    .descr {
+        text-align: left;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .street-lights  {       
+        &__item {
+            &-title {
+                font-size: 16px;
+            }
+        }
+    }
+}
