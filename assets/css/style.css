@@ -379,6 +379,20 @@ input:focus {
 .product-slider__slider {
   width: 49%;
 }
+.product-slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.product-slider__specifications {
+  width: 49%;
+}
 
 .product-information {
   padding: 50px 0;

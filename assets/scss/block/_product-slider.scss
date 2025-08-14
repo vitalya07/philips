@@ -3,4 +3,12 @@
     &__slider {
         width: 49%;
     }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__specifications {
+        width: 49%;
+    }
 }

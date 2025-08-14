@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Освещение туннелей и подземных переходов</title>
+    <title>Luma gen2</title>
     <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
     <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -75,36 +76,52 @@
             <section class="product-slider">
                 <div class="container">
                     <div class="product-slider__wrapper">
-                        <div class="product-slider__slider">
-                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                                <div class="swiper-wrapper">                                   
-                                    <div class="swiper-slide">
-                                        <img src="assets/img/luma-gen2/s1.jpg" alt="товар1" loading="lazy">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="assets/img/luma-gen2/s2.jpg" alt="товар1" loading="lazy">
-                                    </div>
+                        <div class="product-slider__slider">                            
+                            <div class="splide" id="main-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/img1.webp" data-caption="краткое описание изображения 1">
+                                                    <img src="assets/img/img1.webp" alt="название 1">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/img2.webp" data-caption="краткое описание изображения 1">
+                                                    <img src="assets/img/img2.webp" alt="название 1">
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/img3.webp" data-caption="краткое описание изображения 1">
+                                                    <img src="assets/img/img3.webp" alt="название 1">
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
                             </div>
-                            <div thumbsSlider="" class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="assets/img/luma-gen2/s1.jpg" alt="Товар1" loading="lazy"> 
-                                    </div>  
-                                    <div class="swiper-slide">
-                                        <img src="assets/img/luma-gen2/s2.jpg" alt="Товар2" loading="lazy"> 
-                                    </div>                               
+
+                            <div class="splide" id="thumbnail-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide"><img src="assets/img/img1.webp" alt="Продукт1"></li>
+                                        <li class="splide__slide"><img src="assets/img/img2.webp" alt="Продукт1"></li>
+                                        <li class="splide__slide"><img src="assets/img/img3.webp" alt="Продукт1"></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__slider-specifications">
+                        <div class="product-slider__specifications">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem sunt maiores, omnis, eum atque facilis explicabo officia pariatur dolor, distinctio cupiditate nemo ea tempora quidem eaque tempore consequatur. Ducimus, voluptatibus.
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Секция с информацией -->
             <section class="product-information">
                 <div class="container">
                     <h2 class="product-information__title">Информация о семействе продуктов</h2>
@@ -243,7 +260,8 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/hamburger.js"></script>
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/slider.js"></script>
