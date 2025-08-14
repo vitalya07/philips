@@ -1,10 +1,12 @@
-var main = new Splide( '#main-slider', {
-  type       : 'fade',
-  heightRatio: 0.5,
-  pagination : false,
-  arrows     : false,
-  cover      : true,
-} );
+var main = new Splide( '#main-slider', 
+  {
+    type       : 'fade',
+    heightRatio: 0.5,
+    pagination : false,
+    arrows     : false,
+    cover      : true,
+  } 
+);
 
 var thumbnails = new Splide( '#thumbnail-slider', {
   rewind          : true,
@@ -20,6 +22,10 @@ var thumbnails = new Splide( '#thumbnail-slider', {
     touch: 10,
   },
   breakpoints : {
+    763: {
+      pagination : true,
+      arrows     : false,
+    },
     640: {
       fixedWidth  : 66,
       fixedHeight : 38,

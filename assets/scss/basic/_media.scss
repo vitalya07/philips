@@ -40,6 +40,22 @@
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
     }
+    .product-slider {
+        &__slider {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &-big {
+                padding-bottom: 50px;
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__specifications {
+            width: 100%;
+        }
+    }
     .footer {
         &__nav {
             &-list {
@@ -117,6 +133,19 @@
             }
         }
     }
+    .product-slider {
+        &__slider {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &-big {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    #thumbnail-slider {
+        padding-bottom: 60px;
+    }
 }
 @media (max-width:556px) {
     .title {
@@ -131,6 +160,16 @@
         &__item {
             &-title {
                 font-size: 12px;
+            }
+        }
+    }
+    .product-slider {
+        &__slider {
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            &-big {
+                padding-bottom: 30px;
             }
         }
     }
