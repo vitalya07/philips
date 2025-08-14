@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "NeueFrutigerWorld-Black";
   src: url("../fonts/NeueFrutigerWorld-Black.eot");
@@ -142,6 +143,10 @@ input:focus {
 .modal-hide .modal__dialog {
   -webkit-transform: scale(0);
           transform: scale(0);
+}
+
+.product-information__hide {
+  display: none;
 }
 
 .header {
@@ -366,6 +371,122 @@ input:focus {
 .products__item:hover {
   -webkit-box-shadow: 0 0 10px #dbdbdb;
           box-shadow: 0 0 10px #dbdbdb;
+}
+
+.product-information {
+  padding: 50px 0;
+}
+.product-information__title {
+  font-family: "NeueFrutigerWorld-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 150%;
+  color: #171717;
+  margin-bottom: 50px;
+}
+.product-information__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+.product-information__item {
+  max-width: 45%;
+}
+.product-information__item-title {
+  font-family: "NeueFrutigerWorld-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #171717;
+  margin-bottom: 32px;
+}
+.product-information__item-descr, .product-information__item-hide {
+  font-family: "NeueFrutigerWorld-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #171717;
+}
+.product-information__item-hide {
+  display: none;
+}
+.product-information__item-next {
+  background-color: #fff;
+  color: #0059b3;
+  position: relative;
+  height: 50px;
+}
+.product-information__item-next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 12px;
+  height: 2px;
+  background-color: #0059b3;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.product-information__item-next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 12px;
+  height: 2px;
+  background-color: #0059b3;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+.product-information__list {
+  width: 100%;
+}
+.product-information__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 22px;
+  gap: 20px;
+}
+.product-information__list-descr {
+  font-family: "NeueFrutigerWorld-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #171717;
+  width: 80%;
+}
+.product-information__list-check {
+  width: 18px;
+  height: 18px;
+  background-color: #0059b3;
+  border-radius: 100%;
+  position: relative;
+}
+.product-information__list-check::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  width: 5px;
+  height: 8px;
+  border: solid white; /* Цвет галочки */
+  border-width: 0 2px 2px 0; /* Как формировать линию галочки */
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); /* Поворот линии */
 }
 
 .footer {
@@ -673,6 +794,23 @@ input:focus {
   .street-lights__grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
+  .product-information__title {
+    font-size: 30px;
+  }
+  .product-information__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .product-information__item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .product-information__item-title {
+    font-size: 22px;
+  }
 }
 @media (max-width: 556px) {
   .title {
@@ -702,5 +840,19 @@ input:focus {
   }
   .street-lights__item-title {
     font-size: 16px;
+  }
+  .product-information__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .product-information__wrapper {
+    margin-bottom: 20px;
+  }
+  .product-information__item {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .product-information__item-title {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=style.css.map */

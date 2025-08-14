@@ -101,6 +101,22 @@
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         }
     }
+    .product-information {
+        &__title {
+            font-size: 30px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &__item {
+            max-width: 100%;
+            margin-bottom: 20px;
+            &-title {
+                font-size: 22px;
+            }
+        }
+    }
 }
 @media (max-width:556px) {
     .title {
@@ -136,6 +152,22 @@
         &__item {
             &-title {
                 font-size: 16px;
+            }
+        }
+    }
+     .product-information {
+        &__title {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            margin-bottom: 20px;
+        }
+        &__item {
+            max-width: 100%;
+            margin-bottom: 10px;
+            &-title {
+                font-size: 22px;
             }
         }
     }
