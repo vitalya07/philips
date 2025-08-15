@@ -76,7 +76,7 @@
     }
 }
 @media(max-width:993px) {
-      .footer {
+    .footer {
         &__wrapper {
             flex-wrap: wrap;
             justify-content: center;
@@ -87,6 +87,23 @@
             &-list {
                 flex-wrap: wrap;
                 gap: 12px;
+            }
+        }
+    }
+    .performance {
+        &__dialog {
+            width: 95%;
+        }
+        &__wrapper {
+            overflow-y: scroll;
+            flex-direction: column;
+            height: 100vh;
+            gap: 20px;
+        }
+        &__item {
+            width: 100%;
+            &-title {
+                margin-bottom: 15px;
             }
         }
     }

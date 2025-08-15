@@ -58,6 +58,20 @@
         transform: scale(0);
     }
 }
+.performance-show {
+    visibility: visible;
+    opacity: 1;
+    .performance__dialog {
+        transform: scale(1);
+    }
+}
+.performance-hide {
+    visibility: hidden;
+    opacity: 0;
+    .performance__dialog {
+        transform: scale(0);
+    }
+}
 .product-information__hide {
     display: none;
 }

@@ -40,3 +40,32 @@ if (modal || btnCart) {
         }
     });
 }
+const performance = document.querySelector('.performance'),
+      headCpec = document.querySelector('.head__spec');
+if(performance) {
+    function showPerformaneModal() {
+        performance.classList.remove('performance-hide');
+        performance.classList.add('performance-show');
+        document.body.style.overflow = 'hidden'; 
+    }       
+    function hidePerformaneModal() {
+        performance.classList.remove('performance-show');
+        performance.classList.add('performance-hide');
+        document.body.style.overflow = ''; 
+    }  
+    headCpec.addEventListener('click', ()=> {
+        showPerformaneModal();
+    })
+    performance.addEventListener('click', (e) => {
+        if (e.target === performance || e.target.classList.contains('performance__close')) {
+            hidePerformaneModal();
+        }
+    });
+
+    window.addEventListener('keydown', (e) => {
+        const performanceShow= document.querySelector('.performance-show ');
+        if (e.code === 'Escape' && performanceShow) {
+            hidePerformaneModal();
+        }
+    });
+}
