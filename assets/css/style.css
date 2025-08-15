@@ -80,6 +80,32 @@ input:focus {
   outline: 1px solid rgba(0, 0, 0, 0);
 }
 
+table {
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+td {
+  display: block;
+}
+
+th {
+  display: block;
+}
+
+tr {
+  display: block;
+}
+
+thead {
+  display: block;
+}
+
+tbody {
+  display: block;
+}
+
 .container {
   max-width: 1480px;
   padding: 0 30px;
@@ -424,6 +450,60 @@ input:focus {
 }
 .product-slider__specifications {
   width: 49%;
+}
+
+.specifications-table {
+  width: 100%;
+}
+.specifications-table__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d4e1f2;
+  padding: 10px 20px;
+}
+.specifications-table__head > th {
+  font-family: "NeueFrutigerWorld-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #0059b3;
+  text-align: center;
+}
+.specifications-table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  background-color: #d4e1f2;
+  padding: 10px 20px;
+  border-bottom: 2px solid #fff;
+}
+.specifications-table__item {
+  line-height: 100%;
+  text-align: left;
+}
+
+.table__head {
+  font-family: "NeueFrutigerWorld-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #0059b3;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .product-information {
@@ -913,6 +993,16 @@ input:focus {
   .product-slider__slider-big {
     padding-bottom: 30px;
   }
+  .specifications-table__header {
+    padding: 5px 10px;
+  }
+  .specifications-table__row {
+    padding: 5px 10px;
+    gap: 10px;
+  }
+  .specifications-table__item {
+    font-size: 14px;
+  }
 }
 @media (max-width: 380px) {
   .title {
@@ -943,5 +1033,15 @@ input:focus {
   }
   .product-information__item-title {
     font-size: 22px;
+  }
+  .specifications-table__header {
+    padding: 5px;
+  }
+  .specifications-table__row {
+    padding: 5px;
+    gap: 0;
+  }
+  .specifications-table__item {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

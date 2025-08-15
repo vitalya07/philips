@@ -173,6 +173,18 @@
             }
         }
     }
+    .specifications-table {
+        &__header {
+            padding: 5px 10px;
+        }
+        &__row {
+            padding: 5px 10px;
+            gap: 10px;
+        }
+        &__item {
+            font-size: 14px;
+        }
+    }
 }
 @media (max-width:380px) {
     .title {
@@ -208,6 +220,18 @@
             &-title {
                 font-size: 22px;
             }
+        }
+    }
+    .specifications-table {
+        &__header {
+            padding: 5px;
+        }
+        &__row {
+            padding: 5px;
+            gap: 0;
+        }
+        &__item {
+            font-size: 12px;
         }
     }
 }
