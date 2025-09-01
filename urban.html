@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Городское освещение</title>
+    <meta name="description" content="Энергоэффективные светильники для городского освещения. Широкий ассортимент уличных LED-светильников Philips для улиц, дорог и парков. Надежные решения для муниципального освещения.">
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" max="20" required>
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input form-phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Продукты</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="tel:79087640930" class="header__contacts-link">79087640930</a>
+                        <a href="mailto:svetpribor@yandex.ru" class="header__contacts-link">svetpribor@yandex.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="urban products">
+                <div class="container">
+                    <h1 class="urban-title products__title title">Городское освещение</h1>
+                    <p class="urban-descr products__descr descr">Сделайте улицы, дорожки и другие наружные площадки ярче с помощью инновационной линейки городского освещения Philips. Каждый из наших светильников для города надежен, энергоэффективен и прост в установке, а также отличается стилем и практичностью.</p>
+                    <div class="urban__grid products__grid">
+                        <!-- 1 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-1.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Metronomis LED Fluid">Metronomis LED Fluid</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Metronomis LED Fluid">Купить</button>
+                                <a href="metronomis-LED-Fluid.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-2.jpg" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Metronomis LED Sharp">Metronomis LED Sharp</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Metronomis LED Sharp">Купить</button>
+                                <a href="metronomis-LED-Sharp.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-3.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Metronomis LED Torch">Metronomis LED Torch</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Metronomis LED Torch">Купить</button>
+                                <a href="metronomis-LED-Torch.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-16.jpg" alt="Metronomis 1 LED">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Metronomis 1 LED">Metronomis 1 LED</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Metronomis 1 LED">Купить</button>
+                                <a href="Metronomis-1-LED.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-17.webp" alt="Copenhagen LED gen2 small">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen LED gen2 small">Copenhagen LED gen2 small</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen LED gen2 small">Купить</button>
+                                <a href="Copenhagen-LED-gen2-small.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                         <!-- 6 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-18.webp" alt="Copenhagen City LED gen2 small">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen City LED gen2 small">Copenhagen City LED gen2 small</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen City LED gen2 small">Купить</button>
+                                <a href="Copenhagen-City-LED-gen2-small.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-19.webp" alt="Copenhagen LED gen2 large & mega">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen LED gen2 large & mega">Copenhagen LED gen2 large & mega</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen LED gen2 large & mega">Купить</button>
+                                <a href="Copenhagen-LED-gen2-large-mega.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-20.webp" alt="Copenhagen City LED gen2 large & mega">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen City LED gen2 large & mega">Copenhagen City LED gen2 large & mega</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen City LED gen2 large & mega">Купить</button>
+                                <a href="Copenhagen-City-LED-gen2-large-mega.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                         <!-- 9 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-21.webp" alt="Copenhagen LED gen2 mini">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen LED gen2 mini">Copenhagen LED gen2 mini</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen LED gen2 mini">Купить</button>
+                                <a href="Copenhagen-LED-gen2-mini.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-4.webp" alt="TownGuide Performer">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownGuide Performer">TownGuide Performer</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownGuide Performer">Купить</button>
+                                <a href="townGuide-Performer.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-22.jpg" alt="TownTune CCB">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune CCB">TownTune CCB</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune CCB">Купить</button>
+                                <a href="TownTune-CCB.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-23.webp" alt="TownTune Central Post-Top DR">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Central Post-Top DR">TownTune Central Post-Top DR</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Central Post-Top DR">Купить</button>
+                                <a href="TownTune-Central-Post-Top-DR.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-24.webp" alt="TownTune Central Post-Top DTC">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Central Post-Top DTC">TownTune Central Post-Top DTC</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Central Post-Top DTC">Купить</button>
+                                <a href="TownTune-Central-Post-Top-DTC.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-5.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Central Post-Top DTD">TownTune Central Post-Top DTD</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Central Post-Top DTD">Купить</button>
+                                <a href="townTune-Central-Post-Top-DTD.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 15 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-6.jpg" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Central Post-Top">TownTune Central Post-Top</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Central Post-Top">Купить</button>
+                                <a href="townTune-Central-Post-Top.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 16 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-7.webp" alt="фото">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric">TownTune Asymmetric</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric">Купить</button>
+                                <a href="townTune-Asymmetric.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                         <!-- 17 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-25.webp" alt="TownTune Asymmetric DR">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric DR">TownTune Asymmetric DR</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric DR">Купить</button>
+                                <a href="TownTune-Asymmetric-DR.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 18 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-26.webp" alt="TownTune Asymmetric DTC">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric DR">TownTune Asymmetric DTC</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric DTC">Купить</button>
+                                <a href="TownTune-Asymmetric-DTC.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                         <!-- 19 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-27.webp" alt="TownTune Asymmetric DTD">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric DTD">TownTune Asymmetric DTD</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric DTD">Купить</button>
+                                <a href="TownTune-Asymmetric-DTD.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 20 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-28.webp" alt="TownTune Asymmetric Lyre">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric Lyre">TownTune Asymmetric Lyre</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric Lyre">Купить</button>
+                                <a href="TownTune-Asymmetric-Lyre.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 21 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-29.webp" alt="TownTune Asymmetric Lyre DR">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric Lyre DR">TownTune Asymmetric Lyre DR</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric Lyre DR">Купить</button>
+                                <a href="TownTune-Asymmetric-Lyre-DR.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 22 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-30.webp" alt="TownTune Asymmetric Lyre DTC">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric Lyre DTC">TownTune Asymmetric Lyre DTC</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric Lyre DTC">Купить</button>
+                                <a href="TownTune-Asymmetric-Lyre-DTC.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 23  -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-31.webp" alt="TownTune Asymmetric Lyre DTD">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="TownTune Asymmetric Lyre DTD">TownTune Asymmetric Lyre DTD</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="TownTune Asymmetric Lyre DTD">Купить</button>
+                                <a href="TownTune-Asymmetric-Lyre-DTD.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 24  -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-32.webp" alt="MileWide LED gen2 small">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="MileWide LED gen2 small">MileWide LED gen2 small</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="MileWide LED gen2 small">Купить</button>
+                                <a href="MileWide-LED-gen2-small.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 25  -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-33.webp" alt="MileWide LED gen2 large">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="MileWide LED gen2 large">MileWide LED gen2 large</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="MileWide LED gen2 large">Купить</button>
+                                <a href="MileWide-LED-gen2-large.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 26  -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-34.webp" alt="Stela+ gen2 Long, Square & Wide">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Stela+ gen2 Long, Square & Wide">Stela+ gen2 Long, Square & Wide</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Stela+ gen2 Long, Square & Wide">Купить</button>
+                                <a href="Stela-gen2-Long-Square-Wide.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 27  -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-35.webp" alt="CitySwan LED gen3">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CitySwan LED gen3">CitySwan LED gen3</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CitySwan LED gen3">Купить</button>
+                                <a href="CitySwan-LED-gen3.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 28 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-8.webp" alt="CityCharm Cordoba">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CityCharm Cordoba">CityCharm Cordoba</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CityCharm Cordoba">Купить</button>
+                                <a href="cityCharm-Cordoba.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 29 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-9.webp" alt="Jargeau LED gen3">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Jargeau LED gen3">Jargeau LED gen3</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Jargeau LED gen3">Купить</button>
+                                <a href="Jargeau-LED-gen3.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 30 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-36.webp" alt="Heritage LED retrofit kit">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Heritage LED retrofit kit">Heritage LED retrofit kit</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Heritage LED retrofit kit">Купить</button>
+                                <a href="Heritage-LED-retrofit-kit.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 31 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-37.jpg" alt="CityClassic gen2">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CityClassic gen2">CityClassic gen2</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CityClassic gen2">Купить</button>
+                                <a href="CityClassic-gen2.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 32 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-38.webp" alt="UrbanStar">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="UrbanStar">UrbanStar</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="UrbanStar">Купить</button>
+                                <a href="UrbanStar.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 33 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-39.webp" alt="Villa LED gen2">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Villa LED gen2">Villa LED gen2</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Villa LED gen2">Купить</button>
+                                <a href="Villa-LED-gen2.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 34 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-10.webp" alt="UrbanFlex">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="UrbanFlex">UrbanFlex</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="UrbanFlex">Купить</button>
+                                <a href="UrbanFlex.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 35 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-40.webp" alt="UrbanGlow LED gen2">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="UrbanGlow LED gen2">UrbanGlow LED gen2</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="UrbanGlow LED gen2">Купить</button>
+                                <a href="UrbanGlow-LED-gen2.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 36 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-41.jpg" alt="UrbanGlow LED gen3">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="UrbanGlow LED gen3">UrbanGlow LED gen3</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="UrbanGlow LED gen3">Купить</button>
+                                <a href="UrbanGlow-LED-gen3.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 37 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-42.webp" alt="Quebec LED">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Quebec LED">Quebec LED</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Quebec LED">Купить</button>
+                                <a href="Quebec-LED.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 38 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-43.webp" alt="GrandeVille LED">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="GrandeVille LED">GrandeVille LED</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="GrandeVille LED">Купить</button>
+                                <a href="GrandeVille-LED.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 39 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-11.webp" alt="StreetSaver gen2">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="StreetSaver gen2">StreetSaver gen2</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="StreetSaver gen2">Купить</button>
+                                <a href="StreetSaver-gen2.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 40 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-44.webp" alt="ClassicStreet">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="ClassicStreet">ClassicStreet</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="ClassicStreet">Купить</button>
+                                <a href="ClassicStreet.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 41 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-12.webp" alt="CitySoul gen2 LED Large">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CitySoul gen2 LED Large">CitySoul gen2 LED Large</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CitySoul gen2 LED Large">Купить</button>
+                                <a href="citySoul-gen2-LED-Large.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 42 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-13.webp" alt="CitySoul gen2 LED Mini">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CitySoul gen2 LED Mini">CitySoul gen2 LED Mini</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CitySoul gen2 LED Mini">Купить</button>
+                                <a href="CitySoul-gen2-LED-Mini.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 43 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-45.webp" alt="CityCharm Cone">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CityCharm Cone">CityCharm Cone</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CityCharm Cone">Купить</button>
+                                <a href="CityCharm-Cone.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 44 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-46.webp" alt="CityCharm fluid">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CityCharm fluid">CityCharm fluid</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CityCharm fluid">Купить</button>
+                                <a href="CityCharm-fluid.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 45 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-14.webp" alt="CityMood">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="CityMood">CityMood</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="CityMood">Купить</button>
+                                <a href="CityMood.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 46 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-47.webp" alt="Copenhagen City Comfort LED large">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen City Comfort LED large">Copenhagen City Comfort LED large</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen City Comfort LED large">Купить</button>
+                                <a href="Copenhagen-City-Comfort-LED-large.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 47 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-48.webp" alt="Uni Posttop Classic">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Uni Posttop Classic">Uni Posttop Classic</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Uni Posttop Classic">Купить</button>
+                                <a href="Uni-Posttop-Classic.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 48 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-49.webp" alt="Uni Posttop">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Uni Posttop">Uni Posttop</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Uni Posttop">Купить</button>
+                                <a href="Uni-Posttop.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- 49 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-50.webp" alt="Metropole LED gen2">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Metropole LED gen2">Metropole LED gen2</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Metropole LED gen2">Купить</button>
+                                <a href="Metropole-LED-gen2.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                         <!-- 50 -->
+                        <div class="urban__item products__item">
+                            <div class="urban__item-img products__item-img">
+                                <img src="assets/img/urban/urban-img-51.webp" alt="Copenhagen City Comfort LED small">
+                            </div>
+                            <h2 class="urban__item-title products__item-title" data-name="Copenhagen City Comfort LED small">Copenhagen City Comfort LED small</h2>
+                            <div class="urban__item-buttons products__item-buttons">
+                                <button class="urban__item-btn products__item-btn btn-cart" data-product-name="Copenhagen City Comfort LED small">Купить</button>
+                                <a href="Copenhagen-City-Comfort-LED-small.html" class="urban__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Продукты</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="policy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="tel:79087640930" class="footer__contacts-link">79087640930</a>
+                        <a href="mailto:svetpribor@yandex.ru" class="footer__contacts-link">svetpribor@yandex.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+        <a href="#header" class="arrow-top">
+            <img src="assets/icons/Chevron-Up.svg" alt="Стрелка вверх">
+        </a>
+    </div>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/mask.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/arrow-up.js"></script>
+</body>
+</html>    

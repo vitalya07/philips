@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ознакомьтесь с ассортиментом решений Philips для дорожного и уличного освещения. Стильные и энергоэффективные светильники для различных целей.">
+    <title>Дорожное и уличное освещение</title>
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <!-- Модальные окна -->
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input" placeholder="Ваше имя" maxlength="20" required>
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input form-phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать", вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовок -->
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Продукты</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="tel:79087640930" class="header__contacts-link">79087640930</a>
+                        <a href="mailto:svetpribor@yandex.ru" class="header__contacts-link">svetpribor@yandex.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основное содержимое -->
+        <main class="content">
+            <section class="road-and-street products">
+                <div class="container">
+                    <h1 class="road-and-street-title products__title title">Дорожное и уличное освещение</h1>
+                    <p class="road-and-street-descr products__descr descr">Ознакомьтесь с ассортиментом решений Philips для дорожного и уличного освещения. Наша линейка экономичных дорожных фонарей и уличных светильников подходит для различных целей. Кроме того, она стильная и энергоэффективная.</p>
+                    <div class="road-and-street__grid products__grid">
+                        <!-- Продукты -->
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/UniStreet_LumiStreet_gen2_Mini_Beautyshoot_ON.webp" alt="UniStreet_LumiStreet_gen2_Mini_Beautyshoot_ON" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="UniStreet gen2">UniStreet gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="UniStreet gen2">Купить</button>
+                                <a href="UniStreet-gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s1.webp" alt="Luma gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Luma gen2">Luma gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Luma gen2">Купить</button>
+                                <a href="lluma-gen.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s2.webp" alt="DigiStreet" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="DigiStreet">DigiStreet</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="DigiStreet">Купить</button>
+                                <a href="dig-street.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s3.webp" alt="LumiStreet gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="LumiStreet gen2">LumiStreet gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="LumiStreet gen2">Купить</button>
+                                <a href="lumi-street-gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s7.webp" alt="CoreLine Malaga LED" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="CoreLine Malaga LED">CoreLine Malaga LED</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="CoreLine Malaga LED">Купить</button>
+                                <a href="CoreLine-Malaga-LED.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s8.webp" alt="Ledinaire StreetLight" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Ledinaire StreetLight">Ledinaire StreetLight</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Ledinaire StreetLight">Купить</button>
+                                <a href="Ledinaire-StreetLight.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-9.jpg" alt="RoadFlair Pro" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="RoadFlair Pro">RoadFlair Pro</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="RoadFlair Pro">Купить</button>
+                                <a href="RoadFlair-Pro.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-10.webp" alt="GreenVision Xceed Gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="GreenVision Xceed Gen2">GreenVision Xceed Gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="GreenVision Xceed Gen2">Купить</button>
+                                <a href="GreenVision-Xceed-Gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-11.webp" alt="RoadFlair Gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="RoadFlair Gen2">RoadFlair Gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="RoadFlair Gen2">Купить</button>
+                                <a href="RoadFlair-Gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s4.webp" alt="ClearWay gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="ClearWay gen2">ClearWay gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="ClearWay gen2">Купить</button>
+                                <a href="clear-way-gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s5.webp" alt="Iridium gen4" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Iridium gen4">Iridium gen4</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Iridium gen4">Купить</button>
+                                <a href="iridium-gen4.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-12.webp" alt="RoadCharm" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="RoadCharm">RoadCharm</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="RoadCharm">Купить</button>
+                                <a href="RoadCharm.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-13.webp" alt="DigiStreet Catenary" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="DigiStreet Catenary">DigiStreet Catenary</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="DigiStreet Catenary">Купить</button>
+                                <a href="DigiStreet-Catenary.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-14.webp" alt="SmartBright Road" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="SmartBright Road">SmartBright Road</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="SmartBright Road">Купить</button>
+                                <a href="SmartBright-Road.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-15.jpg" alt="CityStar" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="CityStar">CityStar</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="CityStar">Купить</button>
+                                <a href="CityStar.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-16.webp" alt="RoadForce" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="RoadForce">RoadForce</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="RoadForce">Купить</button>
+                                <a href="RoadForce.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-17.webp" alt="TownGlow LED Post Top" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="TownGlow LED Post Top">TownGlow LED Post Top</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="TownGlow LED Post Top">Купить</button>
+                                <a href="TownGlow-LED-Post-Top.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-18.webp" alt="Smart Post-top G3" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Smart Post-top G3">Smart Post-top G3</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Smart Post-top G3">Купить</button>
+                                <a href="Smart-Post-top-G3.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-19.jpg" alt="EssentialForce" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="EssentialForce">EssentialForce</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="EssentialForce">Купить</button>
+                                <a href="EssentialForce.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-20.webp" alt="AluRoad gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="AluRoad gen2">AluRoad gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="AluRoad gen2">Купить</button>
+                                <a href="AluRoad-gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-20.webp" alt="Skyline BRP340" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Skyline BRP340">Skyline BRP340</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Skyline BRP340">Купить</button>
+                                <a href="Skyline-BRP340.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-21.webp" alt="Skyline Xtra BRP360" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Skyline Xtra BRP360">Skyline Xtra BRP360</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Skyline Xtra BRP360">Купить</button>
+                                <a href="Skyline-Xtra-BRP360.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-23.webp" alt="SmartBright Street BRP042" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="SmartBright Street BRP042">SmartBright Street BRP042</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="SmartBright Street BRP042">Купить</button>
+                                <a href="SmartBright-Street-BRP042.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-24.webp" alt="Greenline V3" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Greenline V3">Greenline V3</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Greenline V3">Купить</button>
+                                <a href="Greenline-V3.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-25.webp" alt="Skyline e-Way" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Skyline e-Way">Skyline e-Way</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Skyline e-Way">Купить</button>
+                                <a href="Skyline-e-Way.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-26.webp" alt="UrbanEdge" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="UrbanEdge">UrbanEdge</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="UrbanEdge">Купить</button>
+                                <a href="UrbanEdge.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-27.webp" alt="RoadFlex" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="RoadFlex">RoadFlex</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="RoadFlex">Купить</button>
+                                <a href="RoadFlex.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-28.webp" alt="UrbanStep Plus" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="UrbanStep Plus">UrbanStep Plus</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="UrbanStep Plus">Купить</button>
+                                <a href="UrbanStep-Plus.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-29.webp" alt="Green Vision Xceed" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Green Vision Xceed">Green Vision Xceed</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Green Vision Xceed">Купить</button>
+                                <a href="Green-Vision-Xceed.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-30.webp" alt="EssentialForce Plus" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="EssentialForce Plus">EssentialForce Plus</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="EssentialForce Plus">Купить</button>
+                                <a href="EssentialForce-Plus.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-31.webp" alt="RoadFlair ECO" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="RoadFlair ECO">RoadFlair ECO</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="RoadFlair ECO">Купить</button>
+                                <a href="RoadFlair-ECO.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-32.webp" alt="StreetStar Gen2" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="StreetStar Gen2">StreetStar Gen2</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="StreetStar Gen2">Купить</button>
+                                <a href="StreetStar-Gen2.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-33.webp" alt="BRP121" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="BRP121">BRP121</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="BRP121">Купить</button>
+                                <a href="BRP121.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="road-and-street__item products__item">
+                            <div class="road-and-street__item-img products__item-img">
+                                <img src="assets/img/road-and-street/s-34.webp" alt="Lumistreet gen2 ECO" loading="lazy">
+                            </div>
+                            <h2 class="road-and-street__item-title products__item-title" data-name="Lumistreet gen2 ECO">Lumistreet gen2 ECO</h2>
+                            <div class="road-and-street__item-buttons products__item-buttons">
+                                <button class="road-and-street__item-btn products__item-btn btn-cart" data-product-name="Lumistreet gen2 ECO">Купить</button>
+                                <a href="Lumistreet-gen2-ECO.html" class="road-and-street__item-btn products__item-btn btn-link">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Продукты</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="policy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="tel:79087640930" class="footer__contacts-link">79087640930</a>
+                        <a href="mailto:svetpribor@yandex.ru" class="footer__contacts-link">svetpribor@yandex.ru</a>
+                    </div>
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+        <a href="#header" class="arrow-top">
+            <img src="assets/icons/Chevron-Up.svg" alt="Стрелка вверх">
+        </a>
+    </div>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/mask.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/arrow-up.js"></script>
+</body>
+</html>

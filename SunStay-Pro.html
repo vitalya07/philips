@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>SunStay Pro</title>
+    <meta name="description" content="SunStay Pro — инновационные солнечные уличные светильники для автономного и гибридного освещения без доступа к электросети. Экономичные, прочные и экологичные решения с LED-технологией, батареей LFP и настройкой для улиц, парков и промышленных зон.">
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="body__container">
+        <div class="modal__error modal-hide">
+            <div class="modal__error-dialog">
+                <div class="modal__error-content modal__content">
+                    <h2 class="modal__error-title modal__title">Упс, ошибочка!</h2>
+                    <div class="modal__error-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__succes modal-hide">
+            <div class="modal__succes-dialog">
+                <div class="modal__succes-content modal__content">
+                    <h2 class="modal__succes-title modal__title">Успешно отправлено</h2>
+                    <div class="modal__succes-close modal__close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-hide">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <h2 class="modal__title">Название товара</h2>
+                    <div class="modal__close"></div>
+                    <div class="modal__container">
+                        <form class="modal__form">
+                            <div>
+                                <input type="text" name="your-name" autocomplete="name" class="modal__input">
+                            </div>
+                            <div>
+                                <input type="tel" name="your-tel" autocomplete="tel" class="modal__input">
+                            </div>
+                            <button class="modal__btn" type="submit">Заказать</button>
+                        </form>
+                        <p class="modal__form-warning">Нажимая кнопку "Заказать" вы соглашаетесь с <a href="policy.html" target="_blank">Политикой конфиденциальности</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="performance performance-hide">
+            <div class="performance__dialog">
+                <div class="performance__content">
+                    <div class="performance__head">
+                        <h2 class="performance__title">Характеристики продукта</h2>
+                        <p class="performance__descr">Найти подходящие светильники для различных планов, потребностей и бюджетов легко благодаря обширному портфолио Philips. Оно гарантирует, что у вас всегда будет качественное решение по желаемой цене.</p>
+                        <div class="performance__close"></div>
+                    </div>
+                    <div class="performance__wrapper">
+                        <!-- 1 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Ценность</h3>
+                            <div class="performance__item-content">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Основной ассортимент надежных продуктов</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">50,000 L80</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Эффективность</h3>
+                            <div class="performance__item-content green">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-green.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka2.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-green.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L70</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+
+                         <!-- 3 -->
+                        <div class="performance__item">
+                            <h3 class="performance__item-title">Спецификация</h3>
+                            <div class="performance__item-content blue">
+                                <div class="performance__item-header">
+                                    <h4 class="performance__item-subtitle">Решение</h4>
+                                    <p class="performance__item-subdescr">Подходит для каждого проекта, где свет имеет значение.</p>
+                                </div>  
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Производительность</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/lampochka-blue.svg" alt="Лампочка">
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Стоимость</h4>
+                                    <div class="performance__item-wrapper">
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand-blue.svg" alt="Стоимость">
+                                        </div>
+                                        <div class="performance__item-img">
+                                            <img src="assets/icons/hand2.svg" alt="Стоимость">
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Срок службы</h4>
+                                    <p class="performance__item-subdescr">100,000 L90</p>
+                                </div>   
+                                <div class="performance__item-box">
+                                    <h4 class="performance__item-subtitle">Гарантия</h4>
+                                    <p class="performance__item-subdescr">3,5 года</p>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="index.html" class="header__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайат" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Продукты</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a href="tel:79087640930" class="header__contacts-link">79087640930</a>
+                        <a href="mailto:svetpribor@yandex.ru" class="header__contacts-link">svetpribor@yandex.ru</a>
+                    </div>
+                    <div class="header__hamburger hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="head">
+                <div class="container">
+                    <h1 class="head__title title">SunStay Pro</h1>
+                    <p class="head__descr descr">SunStay Pro: Универсальный солнечный уличный светильник нового поколения</p>
+                    <div class="head__wrapper">
+                        <button class="head__spec green-bg">
+                            <h5 class="head__spec-text">Спецификация</h5>                          
+                            <img src="assets/icons/alert.svg" alt="Предупреждение" loading="lazy" class="head__spec-img">                            
+                        </button>
+                        <div class="head__img">
+                            <img src="assets/icons/led.webp" alt="led" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-slider">
+                <div class="container">
+                    <div class="product-slider__wrapper">
+                        <div class="product-slider__slider">                            
+                            <div class="splide product-slider__slider-big" id="main-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-01.jpg" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-01.jpg" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>  
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-02.jpg" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-02.jpg" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-03.webp" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-03.webp" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-04.jpg" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-04.jpg" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-05.webp" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-05.webp" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>                                                     
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-06.webp" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-06.webp" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>                                      
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-07.jpg" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-07.jpg" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="product-slider__item">
+                                                <a href="assets/img/SunStay-Pro/slide-08.webp" data-caption="SunStay Pro">
+                                                    <img src="assets/img/SunStay-Pro/slide-08.webp" alt="SunStay Pro" loading="lazy">
+                                                </a>
+                                            </div>                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="splide" id="thumbnail-slider" role="group" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                           <img src="assets/img/SunStay-Pro/slide-01.jpg" alt="SunStay Pro" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/SunStay-Pro/slide-02.jpg" alt="SunStay Pro" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/SunStay-Pro/slide-03.webp" alt="SunStay Pro" loading="lazy">
+                                        </li>
+                                         <li class="splide__slide">
+                                           <img src="assets/img/SunStay-Pro/slide-04.jpg" alt="SunStay Pro" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/SunStay-Pro/slide-05.webp" alt="SunStay Pro" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/SunStay-Pro/slide-06.webp" alt="SunStay Pro" loading="lazy">
+                                        </li>
+                                         <li class="splide__slide">
+                                            <img src="assets/img/SunStay-Pro/slide-07.jpg" alt="SunStay Pro" loading="lazy">
+                                        </li> 
+                                        <li class="splide__slide">
+                                            <img src="assets/img/SunStay-Pro/slide-08.webp" alt="SunStay Pro" loading="lazy">
+                                        </li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-slider__specifications">
+                            <table class="product-slider__specifications-table specifications-table">
+                                <thead class="specifications-table__header">
+                                    <tr class="specifications-table__head">
+                                        <th>Основная информация</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="specifications-table__content">
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Драйвер в комплекте:</td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>                                                                       
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Источник света заменяемый:</td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr> 
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Световые характеристики</td>
+                                    </tr>                                    
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Распределение светового потока светильника: </td>
+                                        <td class="specifications-table__item">160° x 95°</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цвет источника света: </td>
+                                        <td class="specifications-table__item">740 нейтральный белый</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цветовая температура (номинальная):</td>
+                                        <td class="specifications-table__item">4000 K</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Индекс цветопередачи (CRI):  </td>
+                                        <td class="specifications-table__item">≥70</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Тип оптики: </td>
+                                        <td class="specifications-table__item">Уличное распределение</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Средний угол:  </td>
+                                        <td class="specifications-table__item">10</td>
+                                    </tr>    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Отношение вверх светового потока: </td>
+                                        <td class="specifications-table__item"> 0</td>
+                                    </tr>
+                                    
+                                    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Рабочие и электрические характеристики</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Защита от перенапряжений (общая/дифференциальная): </td>
+                                        <td class="specifications-table__item">-</td>
+                                    </tr>     
+                                    
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Управление и затемнение</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Регулируемый:  </td>
+                                        <td class="specifications-table__item">Шаговое затемнение, 5 ступеней</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Программируемый: </td>
+                                        <td class="specifications-table__item"> Да</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Максимальный уровень затемнения: </td>
+                                        <td class="specifications-table__item">10%</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Механические характеристики и корпус</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Тип оптической крышки:  </td>
+                                        <td class="specifications-table__item">Стекло</td>
+                                    </tr>     
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Цвет корпуса:  </td>
+                                        <td class="specifications-table__item">Серый</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код механической защиты от ударов: </td>
+                                        <td class="specifications-table__item">IK09</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код защиты от попадания воды и пыли: </td>
+                                        <td class="specifications-table__item">IP66</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Стандартный угол наклона для бокового крепления:</td>
+                                        <td class="specifications-table__item">0°</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Стандартный угол наклона для верхнего крепления: </td>
+                                        <td class="specifications-table__item">0°</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Сертификация и применение</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Знак CE: </td>
+                                        <td class="specifications-table__item">Да</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Знак огнестойкости: </td>
+                                        <td class="specifications-table__item">Для установки на обычно горючих поверхностях</td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item"></td>
+                                    </tr>
+
+                                    <tr class="specifications-table__row ">
+                                        <td class="specifications-table__item table__head">Данные о продукте</td>
+                                    </tr>
+                                    <tr class="specifications-table__row">
+                                        <td class="specifications-table__item">Код семейства продукта: </td>
+                                        <td class="specifications-table__item">VGP726</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция с информацией -->
+            <section class="product-information">
+                <div class="container">
+                    <h2 class="product-information__title">Информация о семействе продуктов</h2>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Описание</h2>
+                            <p class="product-information__item-descr">SunStay Pro: солнечные уличные светильники, которые упрощают достижение целей устойчивого развития. С интегрированной солнечной панелью и опцией дополнительной вертикальной PV-панели, батареей на основе литий-ферро-фосфата (LFP), эти светильники предлагают зарядные опции для автономной и гибридной работы. SunStay Pro доступен в широком диапазоне цветовых температур с специальными рецептами освещения, помогающими сохранить темное небо. Все это в отличном корпусе светильника с прочным, долговечным алюминиевым корпусом (PDC). Таким образом, вы сможете освещать районы без доступа к электросети на долгие годы. Освещение SunStay Pro использует новейшую LED-технологию для длительного срока службы 100 000 часов с превосходным поддержанием светового потока L95.</p>
+                            <p class="product-information__item-descr product-information__hide hide__element">Специально разработанный шпиндель для монтажа на столб предлагает различные углы наклона, а также опции бокового и верхнего монтажа. С новой оптической платформой Ledgine Flex вы можете увеличить расстояние между столбами, снижая общую стоимость владения в широком спектре применений. SunStay Pro разработан для быстрой и простой установки с переработанным проходным кабелем и доступом к компонентам сверху без инструментов для улучшенного обслуживания. Благодаря сервисному тегу у вас есть доступ ко всей необходимой документации прямо на месте. Доступны опции подключения и затемнения, включая радарный датчик движения, который автоматически повышает уровень освещения при обнаружении присутствия. Также есть возможность группировать и управлять соседними уличными светильниками через внутреннюю mesh-сеть для повышения уровня освещения при обнаружении присутствия или активности. Более того, VGP725 SunStay Pro Solar lighting готов к интеграции с системами управления освещением, такими как Interact City, в любое время в будущем. Универсальное решение для сегодня и завтра.</p>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Преимущества</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Освещайте территории без доступа к электросети</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Сохраняйте природный ландшафт — без прокладки кабельных траншей</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Настраивайте освещение благодаря технологии Ledgine Flex</h2>
+                                </li>                                                              
+                            </ul> 
+                            <ul class="product-information__list product-information__hide hide__element">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Снижайте световое загрязнение с помощью специальных световых схем</h2>
+                                </li>      
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Прочный корпус с высокой ударопрочностью (IK08) и защитой от пыли и влаги (IP66)</h2>
+                                </li> 
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Экономия энергии до 100% при автономной работе и до 90% при гибридном режиме</h2>
+                                </li>                              
+                            </ul>
+                            <button class="product-information__item-next">Читать далее</button>
+                        </div>
+                    </div>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Функции</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Сменная литий-железо-фосфатная (LFP) батарея для долгого срока службы и удобства эксплуатации</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Выбор из более чем 40 вариантов световых лучей и внутренних жалюзи</h2>
+                                </li>
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Специально разработанный крепёж для установки на столб с углами наклона от 0° до 15°, точностью наклона 2,5°, варианты монтажа на вершине и сбоку столба</h2>
+                                </li>                                                              
+                            </ul>      
+                            <ul class="product-information__list product-information__hide hide__element"> 
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Настройка профиля диммирования и радарный датчик присутствия для максимального времени автономной работы</h2>
+                                </li>  
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Контроллер заряда MPPT для максимальной эффективности (автономный и гибридный режимы)</h2>
+                                </li>   
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Самодиагностика, индикаторы заряда, разряда и отключения батареи</h2>
+                                </li>   
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Готовность к будущему с разъёмом SR, поддержкой Interact City и опциями подключения датчиков</h2>
+                                </li>                            
+                            </ul>
+                            <button class="product-information__item-next">Читать далее</button>                                                   
+                        </div>
+
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Приложения</h2>
+                            <p class="product-information__item-descr">Велодорожки, пешеходные дорожки и переходы, городские и жилые улицы, кольцевые развязки, парки и детские площадки, торговые зоны, промышленные территории, парковки, автозаправочные станции, аэропорты, порты, зоны общественного транспорта</p>                            
+                        </div>                        
+                    </div>
+                    <div class="product-information__wrapper">
+                        <div class="product-information__item">
+                            <h2 class="product-information__item-title">Предупреждение и безопасность</h2>                            
+                            <ul class="product-information__list">
+                                <li class="product-information__list-item">
+                                    <div class="product-information__list-check"></div>
+                                    <h2 class="product-information__list-descr">Для обеспечения надлежащей автономности расчет размеров солнечной панели должен выполняться обученной командой Signify или обученным партнером, сертифицированным командой Signify.</h2>
+                                </li>                                                             
+                            </ul>                                                         
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="index.html" class="footer__logo">
+                        <img src="assets/icons/logo.webp" alt="Логотип сайта">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Продукты</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="policy.html">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__contacts">
+                        <a href="tel:79087640930" class="footer__contacts-link">79087640930</a>
+                        <a href="mailto:svetpribor@yandex.ru" class="footer__contacts-link">svetpribor@yandex.ru</a>
+                    </div>                    
+                </div>
+                <div class="footer__copy">© Все права защищены</div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/open-more.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>    
