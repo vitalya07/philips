@@ -250,7 +250,7 @@ tbody {
           justify-content: space-between;
 }
 .header__logo {
-  width: 100px;
+  width: 180px;
   height: auto;
 }
 .header__logo > img {
