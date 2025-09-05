@@ -1,3 +1,8 @@
+@media(max-width:1400px) {
+    .ust-th, .ust-td {
+        padding: 11px 14px;
+    }
+}
 @media (max-width:1280px) {
     .products {
         &__grid {
@@ -9,6 +14,9 @@
         &__container {
             width: 40%;
         }
+    }
+    .ust-table {
+        font-size: 0.95rem;
     }
 }
 @media(max-width:1024px) {
@@ -87,6 +95,9 @@
             font-size: 12px;
         }
     }
+    .ust-th, .ust-td {
+        padding: 9px 12px;
+    }
 }
 @media(max-width:993px) {
     .footer {
@@ -120,16 +131,18 @@
             }
         }
     }
+    .ust-table {
+        font-size: 0.9rem;
+    }
 }
 @media (max-width: 763px) {
-    .hamburger {
-        display: block;
-    }
-    .title {
-        font-size: 34px;
-        height: 80px;
-    }
-    .header__nav {
+    .header {
+        &__contacts {
+            &-link {
+                font-size: 14px;
+            }
+        }
+        &__nav {
         position: absolute;
         top: 0;
         right: -100%;
@@ -141,6 +154,14 @@
         &-list {
             display: block;
         }
+    }
+    }
+    .hamburger {
+        display: block;
+    }
+    .title {
+        font-size: 34px;
+        height: 80px;
     }
     .street-lights  {        
         &__grid {
@@ -184,6 +205,27 @@
     #thumbnail-slider {
         padding-bottom: 60px;
     }
+    .ust-th, .ust-td {
+        padding: 8px 10px;
+    }
+    /* Скрываем столбец "Раздел" для компактности */
+    .ust-th:first-child,
+    .ust-td:first-child {
+        display: none;
+    }
+    .table__header {
+        & > tr > th {
+            font-size: 16px;
+        }
+    }
+    .table__head {
+        & > td {
+            font-size: 16px;
+        }
+    }
+    .table__row {
+        padding: 5px 10px;
+    }
 }
 @media (max-width:556px) {
     .title {
@@ -210,19 +252,19 @@
                 padding-bottom: 30px;
             }
         }
-    }
-    .specifications-table {
-        &__header {
-            padding: 5px 10px;
-        }
-        &__row {
-            padding: 5px 10px;
-            gap: 10px;
-        }
-        &__item {
-            font-size: 14px;
-        }
-    }
+    }    
+    // .specifications-table {
+    //     &__header {
+    //         padding: 5px 10px;
+    //     }
+    //     &__row {
+    //         padding: 5px 10px;
+    //         gap: 10px;
+    //     }
+    //     &__item {
+    //         font-size: 14px;
+    //     }
+    // }
     .contact {
         padding: 50px 0;
         &__title {
@@ -240,8 +282,44 @@
             flex-wrap: wrap;
         }
     }
+    .ust-table {
+        font-size: 0.85rem;
+    }
+    .ust-th, .ust-td {
+        padding: 7px 9px;
+    }
+}
+@media(max-width:450px) {
+    .header {
+        &__logo {
+            width: 150px;
+        }
+        &__contacts {
+            &-link {
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .ust-table {
+        font-size: 0.8rem;
+    }
+    .ust-th, .ust-td {
+        padding: 6px 8px;
+    }
 }
 @media (max-width:380px) {
+    .header {
+        &__logo {
+            width: 140px;
+            height: 35px;
+        }
+        &__contacts {
+            &-link {
+                margin-bottom: 0;
+            }
+        }
+    }
     .title {
         font-size: 24px;
         height: 20px;
@@ -270,6 +348,7 @@
             margin-bottom: 20px;
         }
         &__item {
+            width: 100%;
             max-width: 100%;
             margin-bottom: 10px;
             &-title {
@@ -289,4 +368,59 @@
             font-size: 12px;
         }
     }
+    .ust-table {
+        font-size: 0.75rem;
+    }
+    .ust-th, .ust-td {
+        padding: 5px 7px;
+    }
+}
+@media(max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header {
+        &__logo {
+            width: 120px;
+            height: 25px;
+        }
+        &__contacts {
+            &-link {
+                font-size: 10px;
+            }
+        }
+    }
+    .ust-table {
+        font-size: 0.7rem;
+    }
+  .ust-th, .ust-td {
+    padding: 4px 6px;
+  }
+  /* На очень узких экранах таблицу можно сделать вертикальной */
+  .ust-table, .ust-thead, .ust-tbody, .ust-tr {
+    display: block;
+  }
+  .ust-tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .ust-th {
+    display: none;
+  }
+  .ust-td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .ust-td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #444;
+  }
+  .ust-td:last-child {
+    border-bottom: none;
+  }
 }

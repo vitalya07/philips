@@ -259,6 +259,9 @@ tbody {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.header__nav {
+  z-index: 5;
+}
 .header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,14 +285,14 @@ tbody {
 .header__nav-list > li > a {
   font-family: "NeueFrutigerWorld-Regular";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   color: #fff;
 }
 .header__contacts-link {
   font-family: "NeueFrutigerWorld-Regular";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   color: #fff;
   margin-bottom: 10px;
@@ -300,14 +303,15 @@ tbody {
   height: 50px;
   position: relative;
   display: none;
+  z-index: 6;
 }
 .hamburger > span {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px;
-  height: 1px;
+  width: 25px;
+  height: 2px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
@@ -555,25 +559,11 @@ tbody {
      object-fit: cover;
 }
 .product-slider__slider {
-  width: 49%;
+  width: 100%;
   overflow: hidden;
 }
 .product-slider__slider-big {
   padding-bottom: 100px;
-}
-.product-slider__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.product-slider__specifications {
-  width: 49%;
 }
 
 .specifications-table {
@@ -763,7 +753,7 @@ tbody {
           justify-content: space-between;
 }
 .footer__logo {
-  width: 100px;
+  width: 180px;
   height: auto;
 }
 .footer__logo > img {
@@ -795,14 +785,14 @@ tbody {
 .footer__nav-list > li > a {
   font-family: "NeueFrutigerWorld-Regular";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   color: #fff;
 }
 .footer__contacts-link {
   font-family: "NeueFrutigerWorld-Regular";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 120%;
   color: #fff;
   margin-bottom: 10px;
@@ -1162,6 +1152,106 @@ tbody {
   margin-bottom: 100px;
 }
 
+.specification {
+  padding: 60px 0;
+}
+.specification__table {
+  background-color: #d4e1f2;
+}
+.specification__code {
+  background-color: #d4e1f2;
+}
+.specification__code-header {
+  padding: 10px 50px;
+}
+.specification__code-header > tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table__header > tr > th {
+  font-family: "NeueFrutigerWorld-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #171717;
+}
+
+.table__head > td {
+  font-family: "NeueFrutigerWorld-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #171717;
+}
+
+.table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding: 10px 50px;
+}
+.table__row > td {
+  font-family: "NeueFrutigerWorld-Light", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  color: #171717;
+}
+.table__row-start {
+  text-align: left;
+}
+.table__row-end {
+  text-align: right;
+}
+.table__row-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding: 10px 50px;
+}
+.table__row-code > td:first-child {
+  text-align: left;
+  width: 10%;
+}
+.table__row-code > td:nth-child(2) {
+  text-align: left;
+  width: 30%;
+}
+.table__row-code > td:nth-child(3) {
+  text-align: left;
+  width: 20%;
+}
+.table__row-code > td:last-child {
+  text-align: right;
+}
+
+@media (max-width: 1400px) {
+  .ust-th, .ust-td {
+    padding: 11px 14px;
+  }
+}
 @media (max-width: 1280px) {
   .products__grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1169,6 +1259,9 @@ tbody {
   }
   .contact__container {
     width: 40%;
+  }
+  .ust-table {
+    font-size: 0.95rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1230,6 +1323,9 @@ tbody {
   .footer__copy {
     font-size: 12px;
   }
+  .ust-th, .ust-td {
+    padding: 9px 12px;
+  }
 }
 @media (max-width: 993px) {
   .footer__wrapper {
@@ -1264,14 +1360,13 @@ tbody {
   .performance__item-title {
     margin-bottom: 15px;
   }
+  .ust-table {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 763px) {
-  .hamburger {
-    display: block;
-  }
-  .title {
-    font-size: 34px;
-    height: 80px;
+  .header__contacts-link {
+    font-size: 14px;
   }
   .header__nav {
     position: absolute;
@@ -1286,6 +1381,13 @@ tbody {
   }
   .header__nav-list {
     display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .title {
+    font-size: 34px;
+    height: 80px;
   }
   .street-lights__grid {
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -1324,6 +1426,23 @@ tbody {
   #thumbnail-slider {
     padding-bottom: 60px;
   }
+  .ust-th, .ust-td {
+    padding: 8px 10px;
+  }
+  /* Скрываем столбец "Раздел" для компактности */
+  .ust-th:first-child,
+  .ust-td:first-child {
+    display: none;
+  }
+  .table__header > tr > th {
+    font-size: 16px;
+  }
+  .table__head > td {
+    font-size: 16px;
+  }
+  .table__row {
+    padding: 5px 10px;
+  }
 }
 @media (max-width: 556px) {
   .title {
@@ -1345,16 +1464,6 @@ tbody {
   .product-slider__slider-big {
     padding-bottom: 30px;
   }
-  .specifications-table__header {
-    padding: 5px 10px;
-  }
-  .specifications-table__row {
-    padding: 5px 10px;
-    gap: 10px;
-  }
-  .specifications-table__item {
-    font-size: 14px;
-  }
   .contact {
     padding: 50px 0;
   }
@@ -1373,8 +1482,36 @@ tbody {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .ust-table {
+    font-size: 0.85rem;
+  }
+  .ust-th, .ust-td {
+    padding: 7px 9px;
+  }
+}
+@media (max-width: 450px) {
+  .header__logo {
+    width: 150px;
+  }
+  .header__contacts-link {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .ust-table {
+    font-size: 0.8rem;
+  }
+  .ust-th, .ust-td {
+    padding: 6px 8px;
+  }
 }
 @media (max-width: 380px) {
+  .header__logo {
+    width: 140px;
+    height: 35px;
+  }
+  .header__contacts-link {
+    margin-bottom: 0;
+  }
   .title {
     font-size: 24px;
     height: 20px;
@@ -1398,6 +1535,7 @@ tbody {
     margin-bottom: 20px;
   }
   .product-information__item {
+    width: 100%;
     max-width: 100%;
     margin-bottom: 10px;
   }
@@ -1413,5 +1551,60 @@ tbody {
   }
   .specifications-table__item {
     font-size: 12px;
+  }
+  .ust-table {
+    font-size: 0.75rem;
+  }
+  .ust-th, .ust-td {
+    padding: 5px 7px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+  }
+  .header__logo {
+    width: 120px;
+    height: 25px;
+  }
+  .header__contacts-link {
+    font-size: 10px;
+  }
+  .ust-table {
+    font-size: 0.7rem;
+  }
+  .ust-th, .ust-td {
+    padding: 4px 6px;
+  }
+  /* На очень узких экранах таблицу можно сделать вертикальной */
+  .ust-table, .ust-thead, .ust-tbody, .ust-tr {
+    display: block;
+  }
+  .ust-tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .ust-th {
+    display: none;
+  }
+  .ust-td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .ust-td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #444;
+  }
+  .ust-td:last-child {
+    border-bottom: none;
   }
 }/*# sourceMappingURL=style.css.map */

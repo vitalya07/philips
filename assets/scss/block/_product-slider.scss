@@ -14,20 +14,20 @@
         }
     }
     &__slider {
-        width: 49%;
+        width: 100%;
         overflow: hidden;
         &-big {
             padding-bottom: 100px;
         }
     }
-    &__wrapper {
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-    }
-    &__specifications {
-        width: 49%;
-    }
+    // &__wrapper {
+    //     display: flex;
+    //     align-items: start;
+    //     justify-content: space-between;
+    // }
+    // &__specifications {
+    //     width: 49%;
+    // }
 }
 .specifications-table {
     width: 100%;

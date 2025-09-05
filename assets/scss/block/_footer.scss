@@ -8,7 +8,7 @@
         justify-content: space-between;
     }
     &__logo {
-        width: 100px;
+        width: 180px;
         height: auto;
         & > img {
             width: 100%;
@@ -32,7 +32,7 @@
             & > li > a {
                 font-family: 'NeueFrutigerWorld-Regular';
                 font-weight: 400;
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 120%;
                 color: $textColorWhite;
             }
@@ -42,7 +42,7 @@
         &-link {
             font-family: 'NeueFrutigerWorld-Regular';
             font-weight: 400;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 120%;
             color: $textColorWhite;
             margin-bottom: 10px;

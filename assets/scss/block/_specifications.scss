@@ -1,0 +1,81 @@
+.specification {
+  padding: 60px 0;
+  &__table {
+    background-color: $blueGrayColor;
+  }
+  &__code {    
+    background-color: $blueGrayColor;
+    &-header {
+      padding: 10px 50px;
+      & > tr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.table__header {
+  & > tr > th {
+    font-family: 'NeueFrutigerWorld-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: $textColorBlack;
+  }
+}
+.table__head {
+  & > td {
+    font-family: 'NeueFrutigerWorld-Bold', sans-serif; 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: $textColorBlack;
+  }
+  
+}
+.table__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $textColorWhite;
+  padding: 10px 50px;
+  & > td {
+    font-family: 'NeueFrutigerWorld-Light', sans-serif;   
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+    color: $textColorBlack;     
+  }
+  &-start {
+   text-align: left;
+  }
+  &-end {
+    text-align: right;
+  }
+  &-code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid $textColorWhite;
+    padding: 10px 50px;
+    & > td {
+      &:first-child {
+        text-align: left;
+        width: 10%;
+      }
+      &:nth-child(2) {
+        text-align: left;
+        width: 30%;
+      }
+      &:nth-child(3) {
+        text-align: left;
+        width: 20%;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
+
